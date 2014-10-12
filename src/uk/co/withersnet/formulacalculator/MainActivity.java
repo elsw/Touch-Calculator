@@ -156,9 +156,6 @@ public class MainActivity extends Activity {
     }
     
     public void modifierPressed(View view){
-    	if(screen.answerDisplayed()){
-			mainModifier.addBracketsAtEnds();
-		}
     	screen.removeAnswer();
     	screen.removeError();
 
