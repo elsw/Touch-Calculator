@@ -37,10 +37,12 @@ public class Cosine1 extends OpenBracket {
 		Rect r = new Rect();
 		paint.getTextBounds("cos", 0, 3, r);
 		
-		paint.setTextSize(GlobalConstants.errorFontSize);
+		float oldFontSize = paint.getTextSize();
+		
+		paint.setTextSize(oldFontSize / 2);
 		canvas.drawText("-1", bounds.left + r.width(), bounds.bottom - (r.height()* 0.7f), paint);
 		
-		paint.setTextSize(GlobalConstants.fontSize);
+		paint.setTextSize(oldFontSize);
 		paint.getTextBounds("cosa", 0, 4, r);
 		
 		paint.setTextSize(bounds.height() * 1.3f);
@@ -48,7 +50,7 @@ public class Cosine1 extends OpenBracket {
 		
 		canvas.drawText("(", bounds.left + r.width(), bounds.bottom - (bounds.height() * 0.1f), paint);
 		
-		paint.setTextSize(GlobalConstants.fontSize);
+		paint.setTextSize(oldFontSize);
 		paint.setTextScaleX(1);
 	}
 	@Override

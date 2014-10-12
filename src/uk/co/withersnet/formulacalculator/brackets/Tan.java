@@ -34,12 +34,14 @@ public class Tan extends OpenBracket {
 		Rect r = new Rect();
 		paint.getTextBounds("tan", 0, 3, r);
 		
+		float oldFontSize = paint.getTextSize();
+		
 		paint.setTextSize(bounds.height() * 1.3f);
 		paint.setTextScaleX(((float)GlobalConstants.fontSize) / ((float)bounds.height()));
 		
 		canvas.drawText("(", bounds.left + r.width(), bounds.bottom - (bounds.height() * 0.1f), paint);
 		
-		paint.setTextSize(GlobalConstants.fontSize);
+		paint.setTextSize(oldFontSize);
 		paint.setTextScaleX(1);
 	}
 	@Override
