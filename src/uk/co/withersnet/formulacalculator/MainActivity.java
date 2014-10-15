@@ -23,6 +23,7 @@ import uk.co.withersnet.formulacalculator.modifiers.Modxy;
 import uk.co.withersnet.formulacalculator.util.GlobalConstants;
 import uk.co.withersnet.formulacalculator.util.Modifier;
 import uk.co.withersnet.formulacalculator.util.Number;
+import uk.co.withersnet.formulacalculator.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
