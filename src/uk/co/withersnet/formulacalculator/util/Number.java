@@ -69,6 +69,9 @@ public class Number extends Node {
 	public void drawCusor(Canvas canvas,Paint paint) {
 		Rect rect = new Rect();
 		paint.getTextBounds(number, 0, cursorPosition, rect);
+		if(cursorPosition == 0){
+			rect.set(0, 0, 0, 0);
+		}
 		paint.setColor(GlobalConstants.cursorColor);
 		canvas.drawText("|", this.bounds.left + rect.width(),this.bounds.bottom, paint);
 		paint.setColor(Color.BLACK);

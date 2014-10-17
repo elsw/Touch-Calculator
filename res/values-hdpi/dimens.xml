@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- values for hdpi screen size -->
+    <integer name="font_size">30</integer>
+    <integer name="exponent_font_size">23</integer>
+    <integer name="error_font_size">17</integer>
+</resources>

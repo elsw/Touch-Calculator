@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <dimen name="text_size">15sp</dimen>
+    <!-- vallues for large screen size -->
+   <dimen name="text_size">15dp</dimen>
    <dimen name="stext_size">12dp</dimen>
-   <integer name="font_size">30</integer>
-   <integer name="exponent_font_size">23</integer>
-   <integer name="error_font_size">17</integer>
+   <!--  <integer name="font_size">30</integer>
+    <integer name="exponent_font_size">23</integer>
+    <integer name="error_font_size">17</integer>-->
 </resources>
