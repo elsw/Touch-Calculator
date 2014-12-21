@@ -27,6 +27,10 @@ public class Modey extends Modifier {
 		bounds.set(x, bounds.top, bounds.right, y);
 	}
 	@Override
+	public void updateBoundsFromBottom(int x, int y, Paint paint) {
+		updateBounds(x,y,paint);
+	}
+	@Override
 	public void draw(Canvas canvas, Paint paint) {
 		canvas.drawText("e", bounds.left, bounds.bottom, paint);
 		super.draw(canvas,paint);

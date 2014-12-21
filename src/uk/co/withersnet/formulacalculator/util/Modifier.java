@@ -456,8 +456,7 @@ public class Modifier extends Node{
 			// 0,0 is at top left of screen
 			if(node.getBounds().top < up){
 				up = node.getBounds().top;
-			}
-			if(node.getBounds().bottom > down){
+			}if(node.getBounds().bottom > down){
 				up = node.getBounds().top;
 			}
 		}
@@ -850,12 +849,12 @@ public class Modifier extends Node{
 		this.fontSize = fontSize;
 	}
 	public void addBracketsAtEnds(){
-		if(!(nodes.get(0) instanceof OpenBracket)){
+		if(!(nodes.get(1) instanceof OpenBracket)){
 			nodes.add(0, new OpenBracket());
 			nodes.add(0, new Empty());
 			activeIndex += 2;
 		}
-		if(!(nodes.get(nodes.size() - 1) instanceof CloseBracket)){
+		if(!(nodes.get(nodes.size() - 2) instanceof CloseBracket)){
 			nodes.add(new CloseBracket());
 			nodes.add(new Empty());
 			activeIndex += 2;
