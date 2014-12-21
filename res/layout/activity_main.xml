@@ -15,6 +15,7 @@
        android:orientation="vertical"
     />
     <LinearLayout 
+       
        android:id="@+id/modifierButtons"
        android:layout_weight="30"
        android:layout_width="match_parent"
@@ -27,17 +28,17 @@
 	        android:layout_height="0dp"
 	        android:layout_weight="1.3">
 	        
-		    <Button android:text="shift" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="shift" android:layout_weight="1" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		    <Button android:text="help" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="help" android:layout_weight="1" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		    <Button android:text="left" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_marginLeft="15dp"  android:layout_height="fill_parent" android:tag="left" android:layout_weight="1" android:onClick="directionPressed" style="@style/blackButtonStyle"/>
+		    <Button android:text="shift" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="shift" android:layout_weight="1" android:onClick="commandPressed"/>
+		    <Button android:text="help" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="help" android:layout_weight="1" android:onClick="commandPressed"/>
+		    <Button android:text="left" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_marginLeft="15dp"  android:layout_height="fill_parent" android:tag="left" android:layout_weight="1" android:onClick="directionPressed"/>
 		     <LinearLayout  android:layout_weight="1"
 		       android:layout_height="match_parent" android:orientation="vertical" >
-		         <Button android:text="up" android:padding="2dp" android:textSize="@dimen/text_size" android:gravity="top|center" android:layout_width="match_parent"  android:layout_height="0dp" android:layout_weight="1" android:tag="up" android:onClick="directionPressed" style="@style/blackButtonStyle"/>
-		    	 <Button android:text="down" android:padding="2dp" android:textSize="@dimen/text_size" android:gravity="top|center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"  android:tag="down" android:onClick="directionPressed" style="@style/blackButtonStyle"/>
+		         <Button android:text="up" android:padding="2dp" android:textSize="@dimen/text_size" android:gravity="top|center" android:layout_width="match_parent"  android:layout_height="0dp" android:layout_weight="1" android:tag="up" android:onClick="directionPressed"/>
+		    	 <Button android:text="down" android:padding="2dp" android:textSize="@dimen/text_size" android:gravity="top|center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"  android:tag="down" android:onClick="directionPressed"/>
 		    </LinearLayout > 
-		    <Button android:text="right" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_marginRight="15dp"  android:layout_height="fill_parent" android:tag="right" android:layout_weight="1" android:onClick="directionPressed" style="@style/blackButtonStyle"/>
-		    <Button android:text="mem\nerase" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="erase" android:layout_weight="1" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		    <Button android:text="reset\npos" android:padding="2dp" android:layout_height="fill_parent"  android:tag="reset" android:textSize="@dimen/text_size" android:onClick="commandPressed" android:layout_weight="1" style="@style/blackButtonStyle"/>
+		    <Button android:text="right" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_marginRight="15dp"  android:layout_height="fill_parent" android:tag="right" android:layout_weight="1" android:onClick="directionPressed"/>
+		    <Button android:text="mem\nerase" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="erase" android:layout_weight="1" android:onClick="commandPressed"/>
+		    <Button android:text="reset\npos" android:padding="2dp" android:layout_height="fill_parent"  android:tag="reset" android:textSize="@dimen/text_size" android:onClick="commandPressed" android:layout_weight="1" />
 		    
 
 	    </TableRow>
@@ -63,12 +64,12 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="@string/sqrt" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="sqrt" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="@string/x2"  android:padding="2dp" android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="x2" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="@string/xy" android:padding="2dp" android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="xy" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="log" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="log" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="ln" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="ln" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="@string/logab" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="logab" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="@string/sqrt" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="sqrt" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text="@string/x2"  android:padding="2dp" android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="x2" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text="@string/xy" android:padding="2dp" android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="xy" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text="log" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="log" android:layout_weight="1"  android:onClick="modifierPressed" />
+		     <Button android:text="ln" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="ln" android:layout_weight="1"  android:onClick="modifierPressed" />
+		     <Button android:text="@string/logab" android:padding="2dp" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="logab" android:layout_weight="1"  android:onClick="modifierPressed" />
 	
 	    </TableRow>
     	 <TableRow
@@ -93,12 +94,12 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="frac" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="frac" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="abs"  android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="abs" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="@string/ysqrt"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="ysqrt" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="sin" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="sin" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="cos" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="cos" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="tan" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="tan" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="frac" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="frac" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text="abs"  android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="abs" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text="@string/ysqrt"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="ysqrt" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text="sin" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="sin" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" />
+		     <Button android:text="cos" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="cos" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" />
+		     <Button android:text="tan" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="tan" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" />
 	
 	    </TableRow>
 	     <TableRow
@@ -123,12 +124,12 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="RCL"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="RCL" android:padding="2dp" android:layout_weight="1" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="ENG"   android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="ENG" android:padding="2dp" android:layout_weight="1" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="("  android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="(" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text=")"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag=")" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="S-D" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="sd" android:padding="2dp" android:layout_weight="1"  android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text=""  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="empty" android:padding="2dp" android:layout_weight="1"  android:onClick="printMainMod" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="RCL"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="RCL" android:padding="2dp" android:layout_weight="1" android:onClick="commandPressed" />
+		     <Button android:text="ENG"   android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="ENG" android:padding="2dp" android:layout_weight="1" android:onClick="commandPressed" />
+		     <Button android:text="("  android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="(" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" />
+		     <Button android:text=")"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag=")" android:padding="2dp" android:layout_weight="1"  android:onClick="modifierPressed" />
+		     <Button android:text="S-D" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="sd" android:padding="2dp" android:layout_weight="1"  android:onClick="commandPressed" />
+		     <Button android:text=""  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="empty" android:padding="2dp" android:layout_weight="1"  android:onClick="printMainMod" />
 	
 	    </TableRow>
     </LinearLayout >
@@ -166,11 +167,11 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="7"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="7" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="8"  android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="8" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="9"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="9" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="DEL" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="DEL" android:padding="2dp" android:layout_weight="1"  android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="AC" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="AC" android:padding="2dp" android:layout_weight="1"  android:onClick="commandPressed" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="7"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="7" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="8"  android:textSize="@dimen/text_size"  android:layout_height="fill_parent" android:tag="8" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="9"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="9" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="DEL" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="DEL" android:padding="2dp" android:layout_weight="1"  android:onClick="commandPressed" />
+		     <Button android:text="AC" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="AC" android:padding="2dp" android:layout_weight="1"  android:onClick="commandPressed" />
 	
 	    </TableRow>
 	    <TableRow
@@ -194,11 +195,11 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="4" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="4" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="5" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="5" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="6" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="6" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-			 <Button android:text="x" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="x" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="/" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="/" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="4" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="4" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="5" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="5" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="6" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="6" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+			 <Button android:text="x" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="x" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" />
+		     <Button android:text="/" android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="/" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" />
 	    </TableRow>
 	    <TableRow
 	        android:gravity="center"
@@ -222,11 +223,11 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="1"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="1" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="2"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="2" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="3"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="3" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-			 <Button android:text="+"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="+" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="-"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="-" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="1"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="1" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="2"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="2" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="3"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="3" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+			 <Button android:text="+"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="+" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" />
+		     <Button android:text="-"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="-" android:padding="2dp" android:layout_weight="1" android:onClick="operatorPressed" />
 	    </TableRow>
 	    <TableRow
 	        android:gravity="center"
@@ -250,11 +251,11 @@
 	        android:layout_weight="1"
 	         >
 	        
-	 		 <Button android:text="0"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="0" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="."  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="." android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="@string/x10x"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="x10^" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" style="@style/blackButtonStyle"/>
-			 <Button android:text="Ans"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="Ans" android:layout_weight="1" android:padding="2dp" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
-		     <Button android:text="="  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="=" android:layout_weight="1" android:padding="2dp" android:onClick="commandPressed" style="@style/blackButtonStyle"/>
+	 		 <Button android:text="0"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="0" android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="."  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="." android:padding="2dp" android:layout_weight="1" android:onClick="numberPressed" />
+		     <Button android:text="@string/x10x"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="x10^" android:padding="2dp" android:layout_weight="1" android:onClick="modifierPressed" />
+			 <Button android:text="Ans"  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="Ans" android:layout_weight="1" android:padding="2dp" android:onClick="commandPressed" />
+		     <Button android:text="="  android:textSize="@dimen/text_size" android:layout_height="fill_parent" android:tag="=" android:layout_weight="1" android:padding="2dp" android:onClick="commandPressed" />
 	    </TableRow>  
    		         
 	</LinearLayout >

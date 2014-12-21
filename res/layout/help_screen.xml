@@ -18,7 +18,7 @@
 	        <TextView  android:layout_weight="1" android:textSize="@dimen/text_size"  android:layout_height="match_parent" android:layout_width="match_parent" 
 	            		android:text="Calculcator help:\n\nPress screen with 1 finger to move cursor, Drag with 2 fingers to move equation around\nreset pos will reset the position of the equation\n
 STO and RCL stand for store and recall, up to 10 numbers can be stored in positions 0-9, mem erase will erase these locations		"		/>
-		    <Button android:text="back" android:layout_weight="5" android:textSize="@dimen/text_size" android:layout_height="match_parent" android:layout_width="100dp" android:onClick="backPressed" style="@style/blackButtonStyle"/>
+		    <Button android:text="back" android:layout_weight="5" android:textSize="@dimen/text_size" android:layout_height="match_parent" android:layout_width="100dp" android:onClick="backPressed"/>
 		    
     </LinearLayout>
 
